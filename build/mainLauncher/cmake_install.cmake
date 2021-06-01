@@ -1,8 +1,8 @@
-# Install script for directory: D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/mainLauncher
+# Install script for directory: C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/mainLauncher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/MicroprojetJIN")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/outil_visualisation")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

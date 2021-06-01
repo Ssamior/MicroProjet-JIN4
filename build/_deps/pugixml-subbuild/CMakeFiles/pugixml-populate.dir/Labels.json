@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/pugixml-populate"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/73e374376d8ea922b071f3766ec6d810/pugixml-populate.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/adc8c5705dc699f6f6d1f612057dccf1/pugixml-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-update.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-subbuild/CMakeFiles/3d04640a9726a47a6f50468dce6d157d/pugixml-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pugixml-populate"
+		],
+		"name" : "pugixml-populate"
+	}
+}

@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{83CC39DF-1C03-3C98-B38E-0EBDC90041C2}</ProjectGuid>
+    <ProjectGuid>{104D90E7-7716-3E0F-AB79-3DD6BBC6B9C0}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gmock_main.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gmock_maind</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gmock_main.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gmock_main</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gmock_main.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">gmock_main</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gmock_main.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">gmock_main</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -97,14 +97,14 @@
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_UNICODE;UNICODE;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\bin\Debug\gmock_maind.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\bin\Debug\gmock_maind.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,7 +117,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -136,14 +136,14 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\bin\Release\gmock_main.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\bin\Release\gmock_main.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -156,7 +156,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -175,14 +175,14 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\bin\MinSizeRel\gmock_main.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\bin\MinSizeRel\gmock_main.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -195,7 +195,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -J -utf-8</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BufferSecurityCheck>true</BufferSecurityCheck>
@@ -213,14 +213,14 @@
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\bin\RelWithDebInfo\gmock_main.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\bin\RelWithDebInfo\gmock_main.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_UNICODE;UNICODE;_WIN32;STRICT;WIN32_LEAN_AND_MEAN;GTEST_HAS_PTHREAD=0;_HAS_EXCEPTIONS=1;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -232,11 +232,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-src/googlemock/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-build/googlemock/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-build/googlemock/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -244,12 +244,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock.pc.in;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock_main.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock.pc.in;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-src/googlemock/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-build/googlemock/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-build/googlemock/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -257,12 +257,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock.pc.in;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock_main.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock.pc.in;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-src/googlemock/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-build/googlemock/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-build/googlemock/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -270,12 +270,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock.pc.in;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock_main.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock.pc.in;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-src/googlemock/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-src/googlemock/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-build/googlemock/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-build/googlemock/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -283,19 +283,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock.pc.in;D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\cmake\gmock_main.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\FindThreads.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock.pc.in;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\cmake\gmock_main.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-build\googlemock\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googletest\src\gtest-all.cc" />
-    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\src\gmock-all.cc" />
-    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\googletest-src\googlemock\src\gmock_main.cc" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googletest\src\gtest-all.cc" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\src\gmock-all.cc" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-src\googlemock\src\gmock_main.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\ZERO_CHECK.vcxproj">
-      <Project>{B9A80CC3-A687-304E-B147-0E6E99076FA6}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\ZERO_CHECK.vcxproj">
+      <Project>{15E9CCDC-F13F-34EF-96C2-39C7072447D4}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

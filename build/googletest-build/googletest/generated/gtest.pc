@@ -1,5 +1,5 @@
-libdir=C:/Program Files/MicroprojetJIN/lib
-includedir=C:/Program Files/MicroprojetJIN/include
+libdir=C:/Program Files/outil_visualisation/lib
+includedir=C:/Program Files/outil_visualisation/include
 
 Name: gtest
 Description: GoogleTest (without main() function)

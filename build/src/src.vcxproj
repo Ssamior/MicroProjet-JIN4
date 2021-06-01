@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1DE4CCE9-5ABE-3C15-AC53-0D2991638783}</ProjectGuid>
+    <ProjectGuid>{24BE91ED-2CD0-3A7B-AD0E-C9B4EF452832}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">src.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">src</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">src.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">src</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">src.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">src</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">src.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">src</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -89,15 +89,15 @@
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SFML_STATIC;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SFML_STATIC;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,7 +110,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -119,17 +119,17 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -151,17 +151,17 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -184,15 +184,15 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\.;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -204,11 +204,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -216,12 +216,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -229,12 +229,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -242,12 +242,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/src/CMakeFiles/generate.stamp"
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -255,21 +255,43 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\src\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\myMain.cpp" />
-    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\src\myMain.h" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\Circle.cpp" />
+    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\Circle.h" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\Group.cpp" />
+    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\Group.h" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\Shape.cpp" />
+    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\Shape.h" />
+    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\myMain.cpp" />
+    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\src\myMain.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Développement C++\MicroprojetJIN\build\ZERO_CHECK.vcxproj">
-      <Project>{B9A80CC3-A687-304E-B147-0E6E99076FA6}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\ZERO_CHECK.vcxproj">
+      <Project>{15E9CCDC-F13F-34EF-96C2-39C7072447D4}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\pugixml.vcxproj">
+      <Project>{8D951ACA-EC64-3C6B-9D6D-15247F4E6736}</Project>
+      <Name>pugixml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{53E18BDA-6297-31A8-9945-C1368B696F3B}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
+      <Project>{698325F6-F6AA-3D57-80E9-AD96DB2733F2}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{2C38C763-0F37-3D4F-A8F2-95EB1CD3838A}</Project>
+      <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

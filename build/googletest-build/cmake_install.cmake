@@ -1,8 +1,8 @@
-# Install script for directory: D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-src
+# Install script for directory: C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/MicroprojetJIN")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/outil_visualisation")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/googletest-build/googlemock/cmake_install.cmake")
+  include("C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-build/googlemock/cmake_install.cmake")
 
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN
+# Install script for directory: C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/MicroprojetJIN")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/outil_visualisation")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/mainLauncher/cmake_install.cmake")
+  include("C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/src/cmake_install.cmake")
+  include("C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-build/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/mainLauncher/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

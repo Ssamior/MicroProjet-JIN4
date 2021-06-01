@@ -3,21 +3,27 @@
 cmake_policy(SET CMP0009 NEW)
 
 # SOURCES at src/CMakeLists.txt:2 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/*.cpp")
 set(OLD_GLOB
-  "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/myMain.cpp"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/Circle.cpp"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/Group.cpp"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/Shape.cpp"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/myMain.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # SOURCES at src/CMakeLists.txt:2 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/*.h")
 set(OLD_GLOB
-  "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/src/myMain.h"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/Circle.h"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/Group.h"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/Shape.h"
+  "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/src/myMain.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/01 - Documents/_Telecom 2eme annee/Informatique/Développement C++/MicroprojetJIN/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/CMakeFiles/cmake.verify_globs")
 endif()
