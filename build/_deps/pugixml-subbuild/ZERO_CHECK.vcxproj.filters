@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-subbuild\CMakeFiles\73e374376d8ea922b071f3766ec6d810\generate.stamp.rule">
+    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-subbuild\CMakeFiles\faaa5a97a8e888fc29dc55cf4298164c\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{09FCA031-5C1F-3CB4-A57B-8A229DD7DE1C}</UniqueIdentifier>
+      <UniqueIdentifier>{C99E71C0-00A6-3656-A30D-F3A9A7281EC6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8D951ACA-EC64-3C6B-9D6D-15247F4E6736}</ProjectGuid>
+    <ProjectGuid>{C8B8B6A7-A0CA-30E9-85B7-A0260C910422}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pugixml.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pugixml</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pugixml.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pugixml</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pugixml.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">pugixml</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pugixml.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">pugixml</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -94,10 +94,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,7 +110,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -126,10 +126,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -142,7 +142,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -158,10 +158,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -174,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -189,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -204,11 +204,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\CMakeLists.txt">
+    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-build/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -216,12 +216,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\scripts\pugixml.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\scripts\pugixml.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-build/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -229,12 +229,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\scripts\pugixml.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\scripts\pugixml.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-build/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -242,12 +242,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\scripts\pugixml.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\scripts\pugixml.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/pugixml-build/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/pugixml-build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -255,19 +255,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\scripts\pugixml.pc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\3.19.20122902-MSVC_2\CMakeCCompiler.cmake;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\scripts\pugixml.pc.in;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeCommonLanguageInclude.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\CMakeLanguageInformation.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Compiler\MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\GNUInstallDirs.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC-C.cmake;D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.19\Modules\Platform\Windows-MSVC.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src\pugixml.hpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src\pugiconfig.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src\pugixml.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src\pugixml.hpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src\pugiconfig.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src\pugixml.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\ZERO_CHECK.vcxproj">
-      <Project>{15E9CCDC-F13F-34EF-96C2-39C7072447D4}</Project>
+    <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\ZERO_CHECK.vcxproj">
+      <Project>{DABFF6F4-9076-3A5D-BC74-56E66A68C717}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

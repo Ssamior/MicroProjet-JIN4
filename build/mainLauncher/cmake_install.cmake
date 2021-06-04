@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/mainLauncher
+# Install script for directory: D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/mainLauncher
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{136D06C8-6DC0-39F7-A8CC-632DE165EC2F}</ProjectGuid>
+    <ProjectGuid>{E8FEC75A-9148-36FF-A872-8F1E2B5FCBE6}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-network.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-network-s-d</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-network.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-network-s</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-network.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-network-s</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-network.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-network-s</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -91,14 +91,14 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>WIN32;_WINDOWS;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\Debug\sfml-network-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\Debug\sfml-network-s.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -111,7 +111,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -124,14 +124,14 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\Release\sfml-network-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\Release\sfml-network-s.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -144,7 +144,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -157,14 +157,14 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\MinSizeRel\sfml-network-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\MinSizeRel\sfml-network-s.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -177,7 +177,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -189,14 +189,14 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\lib\RelWithDebInfo\sfml-network-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\lib\RelWithDebInfo\sfml-network-s.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include;C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include;D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -208,11 +208,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\CMakeLists.txt">
+    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -220,12 +220,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -233,12 +233,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -246,12 +246,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation -BC:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build --check-stamp-file C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+"D:\02 - Logiciels\Microsoft Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN" "-BD:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build" --check-stamp-file "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -259,45 +259,45 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\Export.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\Ftp.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\Ftp.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\Http.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\Http.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\IpAddress.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\IpAddress.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\Packet.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\Packet.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\Socket.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\Socket.hpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\SocketImpl.hpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\SocketHandle.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\SocketSelector.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\SocketSelector.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\TcpListener.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\TcpListener.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\TcpSocket.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\TcpSocket.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\UdpSocket.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\include\SFML\Network\UdpSocket.hpp" />
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.cpp" />
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.hpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\Export.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\Ftp.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\Ftp.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\Http.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\Http.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\IpAddress.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\IpAddress.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\Packet.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\Packet.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\Socket.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\Socket.hpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\SocketImpl.hpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\SocketHandle.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\SocketSelector.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\SocketSelector.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\TcpListener.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\TcpListener.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\TcpSocket.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\TcpSocket.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\UdpSocket.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\include\SFML\Network\UdpSocket.hpp" />
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.cpp" />
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\ZERO_CHECK.vcxproj">
-      <Project>{15E9CCDC-F13F-34EF-96C2-39C7072447D4}</Project>
+    <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\ZERO_CHECK.vcxproj">
+      <Project>{DABFF6F4-9076-3A5D-BC74-56E66A68C717}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
-      <Project>{698325F6-F6AA-3D57-80E9-AD96DB2733F2}</Project>
+    <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
+      <Project>{0D4FE4C0-26A4-3AE7-92EE-6AF81FFBD6A7}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
   </ItemGroup>

@@ -12,8 +12,8 @@ project(sfml-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(sfml-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/SFML/SFML.git" "GIT_TAG" "2.5.1"
-                    SOURCE_DIR          "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
-                    BINARY_DIR          "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-build"
+                    SOURCE_DIR          "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
+                    BINARY_DIR          "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\googletest-download\CMakeLists.txt" />
+    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\googletest-download\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

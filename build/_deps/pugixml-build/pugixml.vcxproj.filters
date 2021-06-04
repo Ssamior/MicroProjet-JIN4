@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src\pugixml.cpp">
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src\pugixml.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src\pugixml.hpp">
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src\pugixml.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\src\pugiconfig.hpp">
+    <ClInclude Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\src\pugiconfig.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\pugixml-src\CMakeLists.txt" />
+    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\pugixml-src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{374B76D2-8D30-3888-AF3C-2A61BCCC55AA}</UniqueIdentifier>
+      <UniqueIdentifier>{B95B14C0-FDF5-3F15-9886-DF7B8384EEC0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{A9CDD4A6-BDEE-31FA-9807-F3E0DFF8932B}</UniqueIdentifier>
+      <UniqueIdentifier>{97DB10B4-C197-3584-BF3A-0C8FF0316CAD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

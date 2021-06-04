@@ -4,8 +4,8 @@
 cmake_minimum_required(VERSION 3.5)
 
 execute_process(
-  COMMAND "C:/Program Files/Git/cmd/git.exe" rev-list --max-count=1 HEAD
-  WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+  COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" rev-list --max-count=1 HEAD
+  WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
   RESULT_VARIABLE error_code
   OUTPUT_VARIABLE head_sha
   OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -15,8 +15,8 @@ if(error_code)
 endif()
 
 execute_process(
-  COMMAND "C:/Program Files/Git/cmd/git.exe" show-ref "2.5.1"
-  WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+  COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" show-ref "2.5.1"
+  WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
   OUTPUT_VARIABLE show_ref_output
   )
 # If a remote ref is asked for, which can possibly move around,
@@ -41,8 +41,8 @@ endif()
 # This will fail if the tag does not exist (it probably has not been fetched
 # yet).
 execute_process(
-  COMMAND "C:/Program Files/Git/cmd/git.exe" rev-list --max-count=1 "${git_tag}"
-  WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+  COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" rev-list --max-count=1 "${git_tag}"
+  WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
   RESULT_VARIABLE error_code
   OUTPUT_VARIABLE tag_sha
   OUTPUT_STRIP_TRAILING_WHITESPACE
@@ -51,8 +51,8 @@ execute_process(
 # Is the hash checkout out that we want?
 if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
   execute_process(
-    COMMAND "C:/Program Files/Git/cmd/git.exe" fetch
-    WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+    COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" fetch
+    WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
     RESULT_VARIABLE error_code
     )
   if(error_code)
@@ -62,8 +62,8 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
   if(is_remote_ref)
     # Check if stash is needed
     execute_process(
-      COMMAND "C:/Program Files/Git/cmd/git.exe" status --porcelain
-      WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+      COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" status --porcelain
+      WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
       RESULT_VARIABLE error_code
       OUTPUT_VARIABLE repo_status
       )
@@ -76,8 +76,8 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
     # rebase or checkout without losing those changes permanently
     if(need_stash)
       execute_process(
-        COMMAND "C:/Program Files/Git/cmd/git.exe" stash save --all;--quiet
-        WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+        COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" stash save --all;--quiet
+        WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
         RESULT_VARIABLE error_code
         )
       if(error_code)
@@ -87,8 +87,8 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
 
     if("REBASE" STREQUAL "CHECKOUT")
       execute_process(
-        COMMAND "C:/Program Files/Git/cmd/git.exe" checkout "${git_remote}/${git_tag}"
-        WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+        COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" checkout "${git_remote}/${git_tag}"
+        WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
         RESULT_VARIABLE error_code
         )
       if(error_code)
@@ -97,8 +97,8 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
     else()
       # Pull changes from the remote branch
       execute_process(
-        COMMAND "C:/Program Files/Git/cmd/git.exe" rebase "${git_remote}/${git_tag}"
-        WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+        COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" rebase "${git_remote}/${git_tag}"
+        WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
         RESULT_VARIABLE error_code
         OUTPUT_VARIABLE rebase_output
         ERROR_VARIABLE  rebase_output
@@ -106,19 +106,19 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
       if(error_code)
         # Rebase failed, undo the rebase attempt before continuing
         execute_process(
-          COMMAND "C:/Program Files/Git/cmd/git.exe" rebase --abort
-          WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+          COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" rebase --abort
+          WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
         )
 
         if(NOT "REBASE" STREQUAL "REBASE_CHECKOUT")
           # Not allowed to do a checkout as a fallback, so cannot proceed
           if(need_stash)
             execute_process(
-              COMMAND "C:/Program Files/Git/cmd/git.exe" stash pop --index --quiet
-              WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+              COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" stash pop --index --quiet
+              WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
               )
           endif()
-          message(FATAL_ERROR "\nFailed to rebase in: 'C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src'."
+          message(FATAL_ERROR "\nFailed to rebase in: 'D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src'."
                               "\nOutput from the attempted rebase follows:"
                               "\n${rebase_output}"
                               "\n\nYou will have to resolve the conflicts manually")
@@ -136,10 +136,10 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
         message(WARNING "Rebase failed, output has been saved to ${error_log_file}"
                         "\nFalling back to checkout, previous commit tagged as ${tag_name}")
         execute_process(
-          COMMAND "C:/Program Files/Git/cmd/git.exe" tag -a
+          COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" tag -a
                   -m "ExternalProject attempting to move from here to ${git_remote}/${git_tag}"
                   ${tag_name}
-          WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+          WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
           RESULT_VARIABLE error_code
         )
         if(error_code)
@@ -147,8 +147,8 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
         endif()
 
         execute_process(
-          COMMAND "C:/Program Files/Git/cmd/git.exe" checkout "${git_remote}/${git_tag}"
-          WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+          COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" checkout "${git_remote}/${git_tag}"
+          WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
           RESULT_VARIABLE error_code
         )
         if(error_code)
@@ -160,41 +160,41 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
 
     if(need_stash)
       execute_process(
-        COMMAND "C:/Program Files/Git/cmd/git.exe" stash pop --index --quiet
-        WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+        COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" stash pop --index --quiet
+        WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
         RESULT_VARIABLE error_code
         )
       if(error_code)
         # Stash pop --index failed: Try again dropping the index
         execute_process(
-          COMMAND "C:/Program Files/Git/cmd/git.exe" reset --hard --quiet
-          WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+          COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" reset --hard --quiet
+          WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
           RESULT_VARIABLE error_code
           )
         execute_process(
-          COMMAND "C:/Program Files/Git/cmd/git.exe" stash pop --quiet
-          WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+          COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" stash pop --quiet
+          WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
           RESULT_VARIABLE error_code
           )
         if(error_code)
           # Stash pop failed: Restore previous state.
           execute_process(
-            COMMAND "C:/Program Files/Git/cmd/git.exe" reset --hard --quiet ${head_sha}
-            WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+            COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" reset --hard --quiet ${head_sha}
+            WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
           )
           execute_process(
-            COMMAND "C:/Program Files/Git/cmd/git.exe" stash pop --index --quiet
-            WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+            COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" stash pop --index --quiet
+            WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
           )
-          message(FATAL_ERROR "\nFailed to unstash changes in: 'C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src'."
+          message(FATAL_ERROR "\nFailed to unstash changes in: 'D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src'."
                               "\nYou will have to resolve the conflicts manually")
         endif()
       endif()
     endif()
   else()
     execute_process(
-      COMMAND "C:/Program Files/Git/cmd/git.exe" checkout "${git_tag}"
-      WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+      COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" checkout "${git_tag}"
+      WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
       RESULT_VARIABLE error_code
       )
     if(error_code)
@@ -205,12 +205,12 @@ if(error_code OR is_remote_ref OR NOT ("${tag_sha}" STREQUAL "${head_sha}"))
   set(init_submodules "TRUE")
   if(init_submodules)
     execute_process(
-      COMMAND "C:/Program Files/Git/cmd/git.exe" submodule update --recursive --init 
-      WORKING_DIRECTORY "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src"
+      COMMAND "D:/02 - Logiciels/Git/cmd/git.exe" submodule update --recursive --init 
+      WORKING_DIRECTORY "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src"
       RESULT_VARIABLE error_code
       )
   endif()
   if(error_code)
-    message(FATAL_ERROR "Failed to update submodules in: 'C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/_deps/sfml-src'")
+    message(FATAL_ERROR "Failed to update submodules in: 'D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/_deps/sfml-src'")
   endif()
 endif()

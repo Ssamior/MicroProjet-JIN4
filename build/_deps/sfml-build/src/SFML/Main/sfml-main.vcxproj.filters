@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Main\MainWin32.cpp">
+    <ClCompile Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Main\MainWin32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Lucas\Documents\Cours\C++\TP3\outil_visualisation\build\_deps\sfml-src\src\SFML\Main\CMakeLists.txt" />
+    <CustomBuild Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\_deps\sfml-src\src\SFML\Main\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{A9CDD4A6-BDEE-31FA-9807-F3E0DFF8932B}</UniqueIdentifier>
+      <UniqueIdentifier>{97DB10B4-C197-3584-BF3A-0C8FF0316CAD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

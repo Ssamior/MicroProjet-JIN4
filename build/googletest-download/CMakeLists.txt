@@ -11,8 +11,8 @@ include(ExternalProject)
 ExternalProject_Add(googletest
   GIT_REPOSITORY    https://github.com/google/googletest.git
   GIT_TAG           master
-  SOURCE_DIR        "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-src"
-  BINARY_DIR        "C:/Users/Lucas/Documents/Cours/C++/TP3/outil_visualisation/build/googletest-build"
+  SOURCE_DIR        "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/googletest-src"
+  BINARY_DIR        "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/googletest-build"
   CONFIGURE_COMMAND ""
   BUILD_COMMAND     ""
   INSTALL_COMMAND   ""
