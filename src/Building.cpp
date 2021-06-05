@@ -1,4 +1,5 @@
 #include "Building.h"
+#include <SFML/Graphics.hpp>
 
 Building::Building(int x, int y, std::string image) {
 	this->x = x;
@@ -25,7 +26,7 @@ void Building::setLevel(int l) {
 	this->level = level;
 }
 
-void Building::display() {
+void Building::render(sf::RenderTarget* target) {
 	//image.display(x, y);
 }
 

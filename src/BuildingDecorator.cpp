@@ -1,5 +1,6 @@
 #pragma once
 #include "BuildingDecorator.h"
+#include <SFML/Graphics.hpp>
 
 int BuildingDecorator::getX() {
 	return wrappee.getX();
@@ -19,6 +20,6 @@ int BuildingDecorator::getLevel() {
 void BuildingDecorator::setLevel(int l) {
 	wrappee.setLevel(l);
 }
-void BuildingDecorator::display() {
-	wrappee.display();
+void BuildingDecorator::render(sf::RenderTarget* target) {
+	wrappee.render(target);
 }
