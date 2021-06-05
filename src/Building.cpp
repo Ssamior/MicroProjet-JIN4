@@ -1,5 +1,11 @@
 #include "Building.h"
 
+Building::Building(int x, int y, std::string image) {
+	this->x = x;
+	this->y = y;
+	this->level = 1;
+}
+
 int Building::getX() {
 	return x;
 }

@@ -1,11 +1,14 @@
 #pragma once
 #include "BuildingDecorator.h"
+#include "Inventory.h"
+#include <SFML/Graphics.hpp>
 
 class Mine : BuildingDecorator {
-	Item out; //ce que produit la mine
-	int rate; //vitesse de récolte en item/heure
+	Item output; //ce que produit la mine
+	double rate; //vitesse de récolte en item/seconde
 public:
 	Item getItem();
 	int getRate();
 	void setRate(int r);
+	void update(sf::Time time, Inventory& inventory);
 };
