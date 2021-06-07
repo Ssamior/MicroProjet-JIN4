@@ -14,4 +14,5 @@ public:
 	void setLevel(int l);
 	Building* getWrappee() const;
 	void setWrappee(std::unique_ptr<Building> w);
+	void updateWrappee(sf::Time time, Inventory& inventory);
 };

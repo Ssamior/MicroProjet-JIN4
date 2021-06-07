@@ -26,3 +26,6 @@ Building* BuildingDecorator::getWrappee() const {
 void BuildingDecorator::setWrappee(std::unique_ptr<Building> w) {
 	this->wrappee = move(w);
 }
+void BuildingDecorator::updateWrappee(sf::Time time, Inventory& inventory) {
+	wrappee->update(time, inventory);
+}

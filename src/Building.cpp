@@ -25,4 +25,6 @@ int Building::getLevel() const {
 void Building::setLevel(int l) {
 	this->level = level;
 }
+void Building::update(sf::Time time, Inventory& inventory) {
 
+}

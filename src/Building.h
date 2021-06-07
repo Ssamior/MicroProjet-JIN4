@@ -16,4 +16,5 @@ public:
 	void setY(int y);
 	int getLevel() const;
 	void setLevel(int l);
+	void update(sf::Time time, Inventory& inventory);
 };
