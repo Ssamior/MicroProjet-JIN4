@@ -5,7 +5,7 @@
 #include "pugixml.hpp"
 #include <SFML/Graphics.hpp>
 
-constexpr char* xmlfile = "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/resources/map.xml";
+constexpr char* xmlfile = "resources/map.xml";
 
 
 

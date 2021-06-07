@@ -13,8 +13,8 @@ constexpr int GRID_WIDTH = 32;
 constexpr int GRID_HEIGTH = 18;
 
 //Resources
-constexpr char* backgroundStr = "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/resources/dirtFloor.png";
-constexpr char* mineStr = "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/resources/mine.png";
+constexpr char* backgroundStr = "../../resources/dirtFloor.png";
+constexpr char* mineStr = "../../resources/mine.png";
 
 
 class GameWorld {
@@ -31,16 +31,17 @@ private:
 	sf::Texture backgroundTexture;
 	sf::Sprite background;
 
-	void load(char* const&);
-	//On peut ajouter ici des éléments comme vector<vector> npcPositions...
+	//fileMode allow the possibility to load a GameWorld from file (true) or string (false, used for tests)
+	void load(char* const&, bool fileMode = true);
 
 public:
 
-	std::shared_ptr<sf::RenderWindow> getWindow() const; //temp
+	Inventory getInventory() const;
+
 	bool processEvents();
 	void update(sf::Time);
 	void render() const;
 
 	GameWorld() = default;
-	explicit GameWorld(char* const& xmlfile);
+	explicit GameWorld(char* const& xmlfile, bool fileMode = true);
 };

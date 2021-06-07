@@ -1,12 +1,12 @@
 #include "GameWorld.h"
 #include <iostream>
-#include "pugixml.hpp"
 
 
-GameWorld::GameWorld(char* const& xmlfile)
+GameWorld::GameWorld(char* const& xmlfile, bool fileMode)
 {
     window = std::make_shared<sf::RenderWindow>(sf::VideoMode(WIDTH, HEIGTH), title, sf::Style::Close | sf::Style::Titlebar);
     
+    this->load(xmlfile, fileMode);
     //Background texture
     if (!backgroundTexture.loadFromFile(backgroundStr, sf::IntRect(0, 0, 1600, 900)))
     {
@@ -14,16 +14,22 @@ GameWorld::GameWorld(char* const& xmlfile)
     }
     backgroundTexture.setSmooth(true);
     background.setTexture(backgroundTexture);
-
-    this->load(xmlfile);
 }
 
 
-void GameWorld::load(char* const& string) {
+void GameWorld::load(char* const& string, bool fileMode) {
     //Setting up tiles
     tiles.clear();
     pugi::xml_document doc;
-    pugi::xml_parse_result result = doc.load_file(string);
+    pugi::xml_parse_result result;
+    if (fileMode) { //Load from a file
+        result = doc.load_file(string);
+    }
+    else { //Load from a string
+        std::string str = string; //cast to std::string
+        result = doc.load_string(str.c_str());
+    }
+    
     if (!result) {
         //Error
         std::cout << "Loading error ... \n";
@@ -33,7 +39,6 @@ void GameWorld::load(char* const& string) {
     //Loading each object
     for (auto child : doc.children()) {
         std::string name = child.name();
-
         if (name.compare("Inventory") == 0) {
             //Fill inventory
             int i = 0;
@@ -41,7 +46,6 @@ void GameWorld::load(char* const& string) {
                 inventory.add(i,it->as_int());
                 i++;
             }
-            std::cout << inventory.getQuant(Item::Coal) << "\n";
         }
 
 
@@ -58,8 +62,8 @@ void GameWorld::load(char* const& string) {
     }
 }
 
-std::shared_ptr<sf::RenderWindow> GameWorld::getWindow() const { //TEMP
-    return window;
+Inventory GameWorld::getInventory() const {
+    return this->inventory;
 }
 
 bool GameWorld::processEvents() {
@@ -100,8 +104,8 @@ void  GameWorld::update(sf::Time timeElapsed) {
 void GameWorld::render() const {
     window->clear();
     window->draw(background);
+    inventory.render(*window);
 
-    //rendering
 
     window->display();
 }

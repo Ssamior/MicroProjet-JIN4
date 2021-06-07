@@ -1,10 +1,35 @@
 #pragma once
+#include <iostream>
 #include "Inventory.h"
 
-int Inventory::getQuant(int item) {
+Inventory::Inventory() {
+	if (!font.loadFromFile("../../resources/arial.ttf"))
+	{
+		//Error
+		std::cout << "Error while loading inventory font";
+		return;
+	}
+}
+
+int Inventory::getQuant(int item) const {
 	return (int)round(content[item]);
 }
 void Inventory::add(int item, double quant) {
 	content[item] += quant;
+}
+
+void Inventory::render(sf::RenderWindow& window) const {
+	sf::Text text;
+	std::string str = "";
+	for (int item = Item::Iron; item != Item::End; item++)
+	{
+		str.append(items[item] + " : " + std::to_string(getQuant(item)) + "\n");
+	}
+	text.setFont(font);
+	text.setString(str);
+	text.setFillColor(sf::Color::Black);
+	text.setCharacterSize(24);
+
+	window.draw(text);
 }
 
