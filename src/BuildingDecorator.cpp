@@ -2,21 +2,27 @@
 #include "BuildingDecorator.h"
 #include <SFML/Graphics.hpp>
 
-int BuildingDecorator::getX() {
-	return wrappee.getX();
+int BuildingDecorator::getX() const {
+	return wrappee->getX();
 }
 void BuildingDecorator::setX(int x) {
-	wrappee.setX(x);
+	wrappee->setX(x);
 }
-int BuildingDecorator::getY() {
-	return wrappee.getY();
+int BuildingDecorator::getY() const {
+	return wrappee->getY();
 }
 void BuildingDecorator::setY(int y) {
-	wrappee.setY(y);
+	wrappee->setY(y);
 }
-int BuildingDecorator::getLevel() {
-	return wrappee.getLevel();
+int BuildingDecorator::getLevel() const {
+	return wrappee->getLevel();
 }
 void BuildingDecorator::setLevel(int l) {
-	wrappee.setLevel(l);
+	wrappee->setLevel(l);
+}
+Building* BuildingDecorator::getWrappee() const {
+	return this->wrappee.get();
+}
+void BuildingDecorator::setWrappee(std::unique_ptr<Building> w) {
+	this->wrappee = move(w);
 }

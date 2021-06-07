@@ -4,13 +4,14 @@
 
 class BuildingDecorator : InterfaceBuilding {
 private:
-	Building wrappee;
+	std::unique_ptr<Building> wrappee;
 public:
-	BuildingDecorator(Building wrappee);
-	int getX();
+	int getX() const;
 	void setX(int x);
-	int getY();
+	int getY() const;
 	void setY(int y);
-	int getLevel();
+	int getLevel() const;
 	void setLevel(int l);
+	Building* getWrappee() const;
+	void setWrappee(std::unique_ptr<Building> w);
 };
