@@ -2,7 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include "pugixml.hpp"
 #include <vector>
-#include "GameTile.h"
+#include "InterfaceBuilding.h"
 #include "Inventory.h"
 
 //Window parameters
@@ -14,16 +14,14 @@ constexpr int GRID_HEIGTH = 18;
 
 //Resources
 constexpr char* backgroundStr = "../../resources/dirtFloor.png";
-constexpr char* mineStr = "../../resources/mine.png";
+
 
 
 class GameWorld {
 	
 private:
 	std::shared_ptr<sf::RenderWindow> window;
-	//tiles is a 2D vector consisting of GRID_HEIGTH rows and GRID_WIDTH columns
-	std::vector<std::vector<GameTile*>> tiles = 
-		std::vector<std::vector<GameTile*>>(GRID_HEIGTH, std::vector<GameTile*>(GRID_WIDTH));
+	
 	Inventory inventory;
 	int gridWidth = GRID_WIDTH;
 	int gridHeight = GRID_HEIGTH;
@@ -31,13 +29,16 @@ private:
 	sf::Texture backgroundTexture;
 	sf::Sprite background;
 
+	std::vector<std::unique_ptr<InterfaceBuilding>> buildings;
+
 	//fileMode allow the possibility to load a GameWorld from file (true) or string (false, used for tests)
-	void load(char* const&, bool fileMode = true);
+	void load(char* const& string, bool fileMode = true);
+	void handleBuildingClick(BuildingDecorator building);
 
 public:
 
 	Inventory getInventory() const;
-
+	
 	bool processEvents();
 	void update(sf::Time);
 	void render() const;

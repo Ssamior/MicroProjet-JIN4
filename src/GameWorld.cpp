@@ -1,5 +1,6 @@
-#include "GameWorld.h"
 #include <iostream>
+#include "GameWorld.h"
+#include "Mine.h"
 
 
 GameWorld::GameWorld(char* const& xmlfile, bool fileMode)
@@ -18,8 +19,6 @@ GameWorld::GameWorld(char* const& xmlfile, bool fileMode)
 
 
 void GameWorld::load(char* const& string, bool fileMode) {
-    //Setting up tiles
-    tiles.clear();
     pugi::xml_document doc;
     pugi::xml_parse_result result;
     if (fileMode) { //Load from a file
@@ -32,11 +31,12 @@ void GameWorld::load(char* const& string, bool fileMode) {
     
     if (!result) {
         //Error
-        std::cout << "Loading error ... \n";
+        std::cout << "Error while loading GameWorld map... \n";
         return;
     }
 
     //Loading each object
+    buildings.clear();
     for (auto child : doc.children()) {
         std::string name = child.name();
         if (name.compare("Inventory") == 0) {
@@ -50,14 +50,19 @@ void GameWorld::load(char* const& string, bool fileMode) {
 
 
         else if (name.compare("Mine") == 0) {
-            //Create Mine according to parameters
-            //std::unique_ptr mine = make_unique<Mine>(parameters);
             int x = child.attribute("x").as_int();
             int y = child.attribute("y").as_int();
-            //Create GameTile associated with Mine
+            //Create Mine according to parameters
+            auto mine = std::make_unique<Mine>(
+                (Item)child.attribute("item").as_int(),
+                child.attribute("rate").as_double(),
+                x,
+                y,
+                child.attribute("level").as_int()
+                );
             
-            //GameTile tile = GameTile(mineStr, std::move(mine));
-            //tiles[x][y] = tile;
+            //Create GameTile associated with Mine
+            buildings.push_back(std::move(mine));
         }
     }
 }
@@ -70,6 +75,7 @@ bool GameWorld::processEvents() {
  
     window->pollEvent(event);
 
+
     //Check the type of the event
     switch (event.type)
     {
@@ -78,6 +84,19 @@ bool GameWorld::processEvents() {
         window->close();
         return true;
         break;
+
+    case sf::Event::MouseButtonPressed:
+        if (event.mouseButton.button == sf::Mouse::Right)
+        {
+            //Right click
+            int x = event.mouseButton.x - event.mouseButton.x % 50;
+            int y = event.mouseButton.y - event.mouseButton.y % 50;
+            for (int i = 0; i < buildings.size(); i++) {
+                if (buildings[i]->getX() == x/50 && buildings[i]->getY() == y/50) {
+                    //handleBuildingClick(buildings[i]);
+                }
+            }
+        }
 
         //Key pressed
     case sf::Event::KeyPressed:
@@ -97,15 +116,25 @@ bool GameWorld::processEvents() {
     return false;
 }
 
+void GameWorld::handleBuildingClick(BuildingDecorator building) {
+
+}
+
 void  GameWorld::update(sf::Time timeElapsed) {
-    //updating
+    for (int i = 0; i < buildings.size(); i++) {
+        buildings[i]->update(timeElapsed, &inventory);
+    }
 }
 
 void GameWorld::render() const {
     window->clear();
     window->draw(background);
+    
+    //Buildings rendering
+    for (int i = 0; i < buildings.size(); i++) {
+        buildings[i]->render(*window);
+    }
+    //Inventory rendering
     inventory.render(*window);
-
-
     window->display();
 }
