@@ -1,20 +1,19 @@
 #pragma once
 #include "InterfaceBuilding.h"
 #include <string>
+#include <SFML/Graphics.hpp>
 
 class Building : InterfaceBuilding {
 private:
-	int level;
 	int x;
 	int y;
-	//Sprite image;// à ajouter quand on aura la classe Sprite
+	int level = 1;
 public:
-	Building(int x, int y, std::string image);
-	int getX();
+	Building(int x, int y);
+	int getX() const;
 	void setX(int x);
-	int getY();
+	int getY() const;
 	void setY(int y);
-	int getLevel();
+	int getLevel() const;
 	void setLevel(int l);
-	void render(sf::RenderTarget* target);
 };

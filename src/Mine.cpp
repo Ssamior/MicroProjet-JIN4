@@ -1,10 +1,10 @@
 #pragma once
 #include "Mine.h"
 
-Item Mine::getItem() {
+Item Mine::getItem() const {
 	return output;
 }
-int Mine::getRate() {
+int Mine::getRate() const {
 	return rate;
 }
 void Mine::setRate(int r) {

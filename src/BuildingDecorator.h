@@ -13,5 +13,4 @@ public:
 	void setY(int y);
 	int getLevel();
 	void setLevel(int l);
-	void render(sf::RenderTarget* target);
 };

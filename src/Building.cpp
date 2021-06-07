@@ -1,40 +1,28 @@
 #include "Building.h"
 #include <SFML/Graphics.hpp>
 
-Building::Building(int x, int y, std::string image) {
-	this->x = x;
-	this->y = y;
-	this->level = 1;
+Building::Building(int x, int y) :
+	x(x), y(y)
+{
+	
 }
 
-int Building::getX() {
+int Building::getX() const {
 	return x;
 }
 void Building::setX(int x) {
 	this->x = x;
 }
-int Building::getY() {
+int Building::getY() const {
 	return y;
 }
 void Building::setY(int y) {
 	this->y = y;
 }
-int Building::getLevel() {
+int Building::getLevel() const {
 	return level;
 }
 void Building::setLevel(int l) {
 	this->level = level;
 }
 
-void Building::render(sf::RenderTarget* target) {
-	//image.display(x, y);
-}
-
-//à ajouter quand Sprite est implémenté
-// 
-//Sprite Building::getImage() {
-//	return level;
-//}
-//void Building::setImage(Sprite s) {
-//	this->image = s;
-//}

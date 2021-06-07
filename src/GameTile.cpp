@@ -1,11 +1,11 @@
 #include "GameTile.h"
 
-GameTile::GameTile(std::string const& textureName, float x, float y) 
+GameTile::GameTile(std::string const& textureName, std::unique_ptr<Building> building) :
+    building(std::move(building))
 {
     if (!setUpSprite(textureName)) {
         return;
     }
-	position = sf::Vector2f(x, y);
 }
 
 bool GameTile::setUpSprite(std::string const& textureName) {

@@ -5,9 +5,7 @@
 #include "pugixml.hpp"
 #include <SFML/Graphics.hpp>
 
-
-
-const std::string background = "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/resources/dirtFloor.png";
+constexpr char* xmlfile = "D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/resources/map.xml";
 
 
 
@@ -15,7 +13,7 @@ const std::string background = "D:/01 - Documents/_Telecom 2eme annee/Informatiq
 int myMain()
 {
     bool leaveGame = false;
-    GameWorld gameWorld(background);
+    GameWorld gameWorld(xmlfile);
 
        
     sf::Clock clock;

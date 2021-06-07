@@ -20,6 +20,3 @@ int BuildingDecorator::getLevel() {
 void BuildingDecorator::setLevel(int l) {
 	wrappee.setLevel(l);
 }
-void BuildingDecorator::render(sf::RenderTarget* target) {
-	wrappee.render(target);
-}
