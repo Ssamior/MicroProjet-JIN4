@@ -6,11 +6,16 @@
 //Resources
 constexpr char* mineStr = "../../resources/mine.png";
 
-class Mine : public BuildingDecorator {
+
+//Couche qui rï¿½colte une ressource (output) ï¿½ la vitesse de (rate) par seconde,
+//et qui produit la mï¿½me quantitï¿½ de pollution au passage
+
+class Mine : BuildingDecorator {
 	Item output; //ce que produit la mine
-	double rate; //vitesse de récolte en item/seconde
+	double rate; //vitesse de rï¿½colte en item/seconde
 public:
 	Mine(Item out, double rate, int x, int y, int level = 1);
+	Mine(Item out, double rate, int x, int y, std::unique_ptr<Building> w);
 	Item getItem() const;
 	double getRate() const;
 	void setRate(int r);

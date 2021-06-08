@@ -1,9 +1,9 @@
 #include "Building.h"
-#include "Inventory.h"		
+#include "Inventory.h"
 #include <SFML/Graphics.hpp>
 
 Building::Building(char* const& textureName, int x, int y, int level) :
-	x(x), 
+	x(x),
 	y(y),
 	level(level)
 {

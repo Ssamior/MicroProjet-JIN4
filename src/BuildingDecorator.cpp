@@ -39,3 +39,6 @@ void BuildingDecorator::render(sf::RenderWindow& window) const {
 void BuildingDecorator::update(sf::Time time, Inventory* inventory) const {
 	this->wrappee->update(time, inventory);
 }
+
+void BuildingDecorator::updateWrappee(sf::Time time, Inventory& inventory) {
+	wrappee->update(time, inventory);
