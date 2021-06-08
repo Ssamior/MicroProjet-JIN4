@@ -10,7 +10,7 @@ private:
 	int level;
 	sf::Texture texture;
 	sf::Sprite sprite;
-	
+
 public:
 	Building(char* const& textureName, int x, int y, int level = 1);
 	int getX() const;
