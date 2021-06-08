@@ -16,7 +16,7 @@ constexpr int GRID_WIDTH = 32;
 constexpr int GRID_HEIGHT = 18;
 
 //Resources
-constexpr int POLLUTION_MAX = 50;
+constexpr int POLLUTION_MAX = 500;
 constexpr int INGOT_MIN = 100;
 constexpr char* backgroundStr = "../../resources/dirtFloor.png";
 constexpr char* loosingScreenStr = "../../resources/loosingScreen.png";

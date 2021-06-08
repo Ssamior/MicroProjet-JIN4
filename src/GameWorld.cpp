@@ -16,7 +16,114 @@ GameWorld::GameWorld(char* const& xmlfile, bool fileMode)
 
 
 void GameWorld::load(char* const& string, bool fileMode) {
-    //First load the UI with buttons
+    //Load the map
+    pugi::xml_document doc;
+    pugi::xml_parse_result result;
+    //Load from a file ...
+    if (fileMode) {
+        result = doc.load_file(string);
+    }
+    //.. or load from a string
+    else {
+        result = doc.load_string(string);
+        std::cout << string;
+    }
+
+    if (!result) {
+        //Error
+        std::cout << "Error while loading GameWorld map... \n";
+        return;
+    }
+
+    //Loading each object
+    buildings.clear();
+    for (auto child : doc.children()) {
+        std::string name = child.name();
+        if (name.compare("Inventory") == 0) {
+            //Fill inventory
+            int i = 0;
+            for (auto ite = child.attributes().begin(); ite != child.attributes().end(); ite++) {
+                inventory.add(i, ite->as_int());
+                i++;
+            }
+        }
+        else if (name.compare("IronMine") == 0) {
+            //Create Mine according to parameters
+            auto mine = std::make_shared<Mine>(
+                ironMineStr,
+                Item::Iron,
+                child.attribute("rate").as_double(),
+                child.attribute("rate").as_double() * 2,
+                child.attribute("x").as_int(),
+                child.attribute("y").as_int(),
+                child.attribute("level").as_int()
+                );
+            buildings.push_back(mine);
+        }
+
+        else if (name.compare("CoalMine") == 0) {
+            //Create Mine according to parameters
+            auto mine = std::make_shared<Mine>(
+                coalMineStr,
+                Item::Coal,
+                child.attribute("rate").as_double(),
+                child.attribute("rate").as_double() * 1.5,
+                child.attribute("x").as_int(),
+                child.attribute("y").as_int(),
+                child.attribute("level").as_int()
+                );
+            buildings.push_back(mine);
+        }
+
+        else if (name.compare("StoneMine") == 0) {
+            //Create Mine according to parameters
+            auto mine = std::make_shared<Mine>(
+                stoneMineStr,
+                Item::Stone,
+                child.attribute("rate").as_double(),
+                child.attribute("rate").as_double(),
+                child.attribute("x").as_int(),
+                child.attribute("y").as_int(),
+                child.attribute("level").as_int()
+                );
+            buildings.push_back(mine);
+        }
+
+        else if (name.compare("WoodMine") == 0) {
+            //Create Mine according to parameters
+            auto mine = std::make_shared<Mine>(
+                woodMineStr,
+                Item::Wood,
+                child.attribute("rate").as_double(),
+                0,
+                child.attribute("x").as_int(),
+                child.attribute("y").as_int(),
+                child.attribute("level").as_int()
+                );
+            buildings.push_back(mine);
+        }
+
+        else if (name.compare("Tree") == 0) {
+            //Create Tree
+            char* textureTreeStr = "";
+            if (child.attribute("type").as_int() == 0) {
+                textureTreeStr = tree0Str;
+            }
+            else {
+                textureTreeStr = tree1Str;
+            }
+            auto tree = std::make_shared<Consumer>(
+                textureTreeStr,
+                Item::Pollution,
+                0.2,
+                child.attribute("x").as_int(),
+                child.attribute("y").as_int()
+                );
+            buildings.push_back(tree);
+        }
+    }
+
+    //Load the UI with buttons
     //supprButton
     auto it = std::find_if(UI.begin(), UI.end(), [&supprButtonName = "supprButton"](UIElement const& obj){return obj.name == supprButtonName; });
     if (it != UI.end()) {
@@ -86,112 +193,6 @@ void GameWorld::load(char* const& string, bool fileMode) {
         it->sprite.setTexture(it->texture);
         it->sprite.setColor(sf::Color(255, 255, 255, 50));
         it->sprite.setPosition(1550, 300);
-    }
-
-    //Then load the map
-    pugi::xml_document doc;
-    pugi::xml_parse_result result;
-    //Load from a file ...
-    if (fileMode) { 
-        result = doc.load_file(string);
-    }
-    //.. or load from a string
-    else { 
-        result = doc.load_string(string);
-    }
-    
-    if (!result) {
-        //Error
-        std::cout << "Error while loading GameWorld map... \n";
-        return;
-    }
-
-    //Loading each object
-    buildings.clear();
-    for (auto child : doc.children()) {
-        std::string name = child.name();
-        if (name.compare("Inventory") == 0) {
-            //Fill inventory
-            int i = 0;
-            for (auto ite = child.attributes().begin(); ite != child.attributes().end(); ite++) {
-                inventory.add(i,ite->as_int());
-                i++;
-            }
-        }
-        else if (name.compare("IronMine") == 0) {
-            //Create Mine according to parameters
-            auto mine = std::make_shared<Mine>(
-                ironMineStr,
-                Item::Iron,
-                child.attribute("rate").as_double(),
-                child.attribute("rate").as_double()*2,
-                child.attribute("x").as_int(),
-                child.attribute("y").as_int(),
-                child.attribute("level").as_int()
-                );
-            buildings.push_back(mine);
-        }
-
-        else if (name.compare("CoalMine") == 0) {
-            //Create Mine according to parameters
-            auto mine = std::make_shared<Mine>(
-                coalMineStr,
-                Item::Coal,
-                child.attribute("rate").as_double(),
-                child.attribute("rate").as_double()*1.5,
-                child.attribute("x").as_int(),
-                child.attribute("y").as_int(),
-                child.attribute("level").as_int()
-                );
-            buildings.push_back(mine);
-        }
-
-        else if (name.compare("StoneMine") == 0) {
-            //Create Mine according to parameters
-            auto mine = std::make_shared<Mine>(
-                stoneMineStr,
-                Item::Stone,
-                child.attribute("rate").as_double(),
-                child.attribute("rate").as_double(),
-                child.attribute("x").as_int(),
-                child.attribute("y").as_int(),
-                child.attribute("level").as_int()
-                );
-            buildings.push_back(mine);
-        }
-
-        else if (name.compare("WoodMine") == 0) {
-            //Create Mine according to parameters
-            auto mine = std::make_shared<Mine>(
-                woodMineStr,
-                Item::Wood,
-                child.attribute("rate").as_double(),
-                0,
-                child.attribute("x").as_int(),
-                child.attribute("y").as_int(),
-                child.attribute("level").as_int()
-                );
-            buildings.push_back(mine);
-        }
-
-        else if (name.compare("Tree") == 0) {
-            //Create Tree
-            char* textureTreeStr = "";
-            if (child.attribute("type").as_int() == 0) {
-                textureTreeStr = tree0Str;
-            }
-            else {
-                textureTreeStr = tree1Str;
-            }
-            auto tree = std::make_shared<Consumer>(
-                textureTreeStr,
-                Item::Pollution,
-                0.2,
-                child.attribute("x").as_int(),
-                child.attribute("y").as_int()
-                );
-            buildings.push_back(tree);
-        }
     }
 }
 

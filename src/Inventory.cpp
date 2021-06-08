@@ -6,7 +6,7 @@ Inventory::Inventory() {
 	if (!font.loadFromFile("../../resources/arial.ttf"))
 	{
 		//Error
-		std::cout << "Error while loading inventory font";
+		std::cout << "Error while loading inventory font\n";
 		return;
 	}
 }
