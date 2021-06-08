@@ -3,21 +3,21 @@
 #include "Inventory.h"
 #include <SFML/Graphics.hpp>
 
-//Resources
-constexpr char* mineStr = "../../resources/mine.png";
 
+//Couche qui recolte une ressource (output) a la vitesse de (rate) par seconde,
+//et qui produit la meme quantite de pollution au passage
 
-//Couche qui r�colte une ressource (output) � la vitesse de (rate) par seconde,
-//et qui produit la m�me quantit� de pollution au passage
-
-class Mine : BuildingDecorator {
+class Mine : public BuildingDecorator {
 	Item output; //ce que produit la mine
-	double rate; //vitesse de r�colte en item/seconde
+	double rate; //vitesse de recolte en item/seconde
+	double pollutionRate; //vitesse de recolte en pollution/seconde
 public:
-	Mine(Item out, double rate, int x, int y, int level = 1);
-	Mine(Item out, double rate, int x, int y, std::unique_ptr<Building> w);
+	Mine(char* const& textureName, Item out, double rate, double pollutionRate, int x, int y, int level = 1);
+	Mine(Item out, double rate, std::unique_ptr<Building> w);
 	Item getItem() const;
 	double getRate() const;
-	void setRate(int r);
+	double getPollutionRate() const;
+	void setRate(double r);
+	void setPollutionRate(double pr);
 	void update(sf::Time time, Inventory* inventory) const override;
 };

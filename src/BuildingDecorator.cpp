@@ -40,5 +40,6 @@ void BuildingDecorator::update(sf::Time time, Inventory* inventory) const {
 	this->wrappee->update(time, inventory);
 }
 
-void BuildingDecorator::updateWrappee(sf::Time time, Inventory& inventory) {
+void BuildingDecorator::updateWrappee(sf::Time time, Inventory* inventory) const {
 	wrappee->update(time, inventory);
+}

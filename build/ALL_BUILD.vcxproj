@@ -170,6 +170,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
+    <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\mainLauncher\copy-resources.vcxproj">
+      <Project>{A93CFE94-B966-3D07-B577-994A339C164D}</Project>
+      <Name>copy-resources</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
     <ProjectReference Include="D:\01 - Documents\_Telecom 2eme annee\Informatique\Developpement C++\MicroprojetJIN\build\mainLauncher\mainLauncher.vcxproj">
       <Project>{38145604-3FA7-3127-9BEA-DA6CBA1D4001}</Project>
       <Name>mainLauncher</Name>

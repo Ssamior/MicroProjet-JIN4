@@ -16,5 +16,5 @@ public:
 	bool setUpSprite(char* const&, int x, int y);
 	void render(sf::RenderWindow& window) const override;
 	void update(sf::Time time, Inventory* inventory) const override;
-  void updateWrappee(sf::Time time, Inventory& inventory);
+	void updateWrappee(sf::Time time, Inventory* inventory) const;
 };

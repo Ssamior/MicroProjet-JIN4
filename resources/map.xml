@@ -1,4 +1,20 @@
 <?xml version="1.0"?>
-<Mine x="7" y="12" level="1" item="0" rate="2" />
-<Mine x="2" y="2" level="1" item="2" rate="2" />
-<Inventory iron="50" salt="100" coal="150" />
+<IronMine x="7" y="12" level="1" rate="2" />
+<CoalMine x="2" y="2" level="1" rate="2" />
+<Tree x="21" y="1" type="0" />
+<Tree x="5" y="2" type="1" />
+<Tree x="4" y="4" type="0" />
+<Tree x="5" y="5" type="0" />
+<Tree x="17" y="7" type="1" />
+<Tree x="13" y="8" type="0" />
+<Tree x="22" y="12" type="0" />
+<Tree x="8" y="13" type="1" />
+<Tree x="12" y="15" type="0" />
+<Tree x="15" y="7" type="0" />
+<Tree x="20" y="3" type="1" />
+<Tree x="30" y="5" type="0" />
+<Tree x="24" y="8" type="0" />
+<Tree x="25" y="9" type="1" />
+<Tree x="32" y="15" type="0" />
+<Tree x="28" y="7" type="0" />
+<Inventory iron="1000" stone="1000" coal="1000" wood="1000" pollution="0" />

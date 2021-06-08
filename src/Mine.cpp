@@ -1,15 +1,16 @@
 #pragma once
 #include "Mine.h"
 
-Mine::Mine(Item out, double rate, int x, int y) :
+Mine::Mine(char* const& textureName, Item out, double rate, double pollutionRate, int x, int y, int level) :
 output(out),
-rate(rate)
+rate(rate),
+pollutionRate(pollutionRate)
 {
-	auto wrappee = std::make_unique<Building>(x, y);
+	auto wrappee = std::make_unique<Building>(textureName, x, y, level);
 	this->setWrappee(move(wrappee));
 }
 
-Mine::Mine(Item out, double rate, int x, int y, std::unique_ptr<Building> w) :
+Mine::Mine(Item out, double rate, std::unique_ptr<Building> w) :
 output(out),
 rate(rate)
 {
@@ -24,11 +25,20 @@ double Mine::getRate() const {
 	return rate;
 }
 
-void Mine::setRate(int r) {
+double Mine::getPollutionRate() const {
+	return pollutionRate;
+}
+
+void Mine::setRate(double r) {
 	rate = r;
 }
-void Mine::update(sf::Time time, Inventory* inventory) {
+
+void Mine::setPollutionRate(double pr) {
+	pollutionRate = pr;
+}
+
+void Mine::update(sf::Time time, Inventory* inventory) const {
 	inventory->add(getItem(), getRate() * time.asSeconds());
-	inventory->add(Item::Pollution, getRate() * time.asSeconds());
-	updateWrappee(time, inventory);
+	inventory->add(Item::Pollution, getPollutionRate() * time.asSeconds());
+	this->updateWrappee(time, inventory);
 }

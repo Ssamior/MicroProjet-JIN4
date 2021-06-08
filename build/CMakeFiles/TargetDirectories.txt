@@ -33,6 +33,7 @@ D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/Microprojet
 D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/mainLauncher/CMakeFiles/INSTALL.dir
 D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/mainLauncher/CMakeFiles/RUN_TESTS.dir
 D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/mainLauncher/CMakeFiles/mainLauncher.dir
+D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/mainLauncher/CMakeFiles/copy-resources.dir
 D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/src/CMakeFiles/src.dir
 D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/src/CMakeFiles/INSTALL.dir
 D:/01 - Documents/_Telecom 2eme annee/Informatique/Developpement C++/MicroprojetJIN/build/src/CMakeFiles/RUN_TESTS.dir

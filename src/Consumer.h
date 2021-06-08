@@ -6,14 +6,14 @@
 //Couche qui consomme une ressource (input) à la vitesse (rate) 
 //pour permettre à la couche inférieure de fonctionner
 
-class Consumer : BuildingDecorator {
+class Consumer : public BuildingDecorator {
 	Item input; //ce que produit la mine
 	double rate; //vitesse de récolte en item/seconde
 public:
-	Consumer(Item out, double rate, int x, int y);
-	Consumer(Item out, double rate, int x, int y, std::unique_ptr<Building> w);
+	Consumer(char* const& textureName, Item out, double rate, int x, int y, int level = 1);
+	Consumer(Item out, double rate, std::unique_ptr<Building> w);
 	Item getItem() const;
-	int getRate() const;
-	void setRate(int r);
-	void update(sf::Time time, Inventory& inventory);
+	double getRate() const;
+	void setRate(double r);
+	void update(sf::Time time, Inventory* inventory) const override;
 };

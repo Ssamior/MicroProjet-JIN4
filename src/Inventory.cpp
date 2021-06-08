@@ -14,6 +14,11 @@ Inventory::Inventory() {
 int Inventory::getQuant(int item) const {
 	return (int)round(content[item]);
 }
+
+sf::Font Inventory::getFont() const {
+	return font;
+}
+
 void Inventory::add(int item, double quant) {
 	content[item] += quant;
 }
