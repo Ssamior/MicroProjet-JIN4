@@ -2,8 +2,8 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 
-const std::vector<std::string> items = {"Iron", "Stone", "Coal", "Wood", "Pollution", "NotAnItem"};
-enum Item { Iron = 0, Stone = 1, Coal = 2, Wood = 3, Pollution = 4, End = 5};
+const std::vector<std::string> items = {"Ingot", "Iron", "Stone", "Coal", "Wood", "Pollution", "NotAnItem"};
+enum Item { Ingot = 0, Iron = 1, Stone = 2, Coal = 3, Wood = 4, Pollution = 5, End = 6};
 
 class Inventory {
 private:

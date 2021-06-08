@@ -1,16 +1,17 @@
 #pragma once
 #include "Mine.h"
 
+
 Mine::Mine(char* const& textureName, Item out, double rate, double pollutionRate, int x, int y, int level) :
 output(out),
 rate(rate),
 pollutionRate(pollutionRate)
 {
-	auto wrappee = std::make_unique<Building>(textureName, x, y, level);
+	auto wrappee = std::make_shared<Building>(textureName, x, y, level);
 	this->setWrappee(move(wrappee));
 }
 
-Mine::Mine(Item out, double rate, std::unique_ptr<Building> w) :
+Mine::Mine(Item out, double rate, std::shared_ptr<InterfaceBuilding> w) :
 output(out),
 rate(rate)
 {
@@ -38,7 +39,9 @@ void Mine::setPollutionRate(double pr) {
 }
 
 void Mine::update(sf::Time time, Inventory* inventory) const {
-	inventory->add(getItem(), getRate() * time.asSeconds());
-	inventory->add(Item::Pollution, getPollutionRate() * time.asSeconds());
-	this->updateWrappee(time, inventory);
+	if (getWrappee()->getWorkingStatus()) {
+		inventory->add(getItem(), getRate() * time.asSeconds());
+		inventory->add(Item::Pollution, getPollutionRate() * time.asSeconds());
+		this->updateWrappee(time, inventory);
+	}
 }

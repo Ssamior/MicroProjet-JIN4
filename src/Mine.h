@@ -1,6 +1,7 @@
 #pragma once
 #include "BuildingDecorator.h"
 #include "Inventory.h"
+#include "Building.h"
 #include <SFML/Graphics.hpp>
 
 
@@ -13,7 +14,7 @@ class Mine : public BuildingDecorator {
 	double pollutionRate; //vitesse de recolte en pollution/seconde
 public:
 	Mine(char* const& textureName, Item out, double rate, double pollutionRate, int x, int y, int level = 1);
-	Mine(Item out, double rate, std::unique_ptr<Building> w);
+	Mine(Item out, double rate, std::shared_ptr<InterfaceBuilding> w);
 	Item getItem() const;
 	double getRate() const;
 	double getPollutionRate() const;

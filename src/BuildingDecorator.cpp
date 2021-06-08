@@ -3,6 +3,12 @@
 #include "Inventory.h"
 #include <SFML/Graphics.hpp>
 
+bool BuildingDecorator::getWorkingStatus() const {
+	return getWrappee()->getWorkingStatus();
+}
+void BuildingDecorator::setWorkingStatus(bool isWorkingBool) {
+	getWrappee()->setWorkingStatus(isWorkingBool);
+}
 int BuildingDecorator::getX() const {
 	return wrappee->getX();
 }
@@ -21,11 +27,11 @@ int BuildingDecorator::getLevel() const {
 void BuildingDecorator::setLevel(int l) {
 	wrappee->setLevel(l);
 }
-Building* BuildingDecorator::getWrappee() const {
-	return this->wrappee.get();
+std::shared_ptr<InterfaceBuilding> BuildingDecorator::getWrappee() const {
+	return this->wrappee;
 }
-void BuildingDecorator::setWrappee(std::unique_ptr<Building> w) {
-	this->wrappee = move(w);
+void BuildingDecorator::setWrappee(std::shared_ptr<InterfaceBuilding> w) {
+	this->wrappee = w;
 }
 
 bool BuildingDecorator::setUpSprite(char* const& textureName, int xSprite, int ySprite) {

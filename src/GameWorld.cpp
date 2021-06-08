@@ -27,6 +27,16 @@ void GameWorld::load(char* const& string, bool fileMode) {
         it->sprite.setColor(sf::Color(255, 255, 255, 50));
         it->sprite.setPosition(1550, 0);
     }
+    //furnaceButton
+    it = std::find_if(UI.begin(), UI.end(), [&furnaceButtonName = "furnaceButton"](UIElement const& obj){return obj.name == furnaceButtonName; });
+    if (it != UI.end()) {
+        //Loading texture and applying it to sprite
+        if (!it->texture.loadFromFile(furnaceStr)) { return; }
+        it->texture.setSmooth(true);
+        it->sprite.setTexture(it->texture);
+        it->sprite.setColor(sf::Color(255, 255, 255, 50));
+        it->sprite.setPosition(1550, 50);
+    }
     //ironMineButton
     it = std::find_if(UI.begin(), UI.end(), [&ironMineButtonName = "ironMineButton"](UIElement const& obj){return obj.name == ironMineButtonName; });
     if (it != UI.end()) {
@@ -35,7 +45,7 @@ void GameWorld::load(char* const& string, bool fileMode) {
         it->texture.setSmooth(true);
         it->sprite.setTexture(it->texture);
         it->sprite.setColor(sf::Color(255, 255, 255, 50));
-        it->sprite.setPosition(1550, 50);
+        it->sprite.setPosition(1550, 100);
     }
     //coalMineButton
     it = std::find_if(UI.begin(), UI.end(), [&coalMineButtonName = "coalMineButton"](UIElement const& obj){return obj.name == coalMineButtonName; });
@@ -45,7 +55,7 @@ void GameWorld::load(char* const& string, bool fileMode) {
         it->texture.setSmooth(true);
         it->sprite.setTexture(it->texture);
         it->sprite.setColor(sf::Color(255, 255, 255, 50));
-        it->sprite.setPosition(1550, 100);
+        it->sprite.setPosition(1550, 150);
     }
     //stoneMineButton
     it = std::find_if(UI.begin(), UI.end(), [&stoneMineButtonName = "stoneMineButton"](UIElement const& obj){return obj.name == stoneMineButtonName; });
@@ -55,7 +65,7 @@ void GameWorld::load(char* const& string, bool fileMode) {
         it->texture.setSmooth(true);
         it->sprite.setTexture(it->texture);
         it->sprite.setColor(sf::Color(255, 255, 255, 50));
-        it->sprite.setPosition(1550, 150);
+        it->sprite.setPosition(1550, 200);
     }
     //woodMineButton
     it = std::find_if(UI.begin(), UI.end(), [&woodMineButtonName = "woodMineButton"](UIElement const& obj){return obj.name == woodMineButtonName; });
@@ -65,7 +75,17 @@ void GameWorld::load(char* const& string, bool fileMode) {
         it->texture.setSmooth(true);
         it->sprite.setTexture(it->texture);
         it->sprite.setColor(sf::Color(255, 255, 255, 50));
-        it->sprite.setPosition(1550, 200);
+        it->sprite.setPosition(1550, 250);
+    }
+    //recyclingUnitButton
+    it = std::find_if(UI.begin(), UI.end(), [&recyclingUnitButtonName = "recyclingUnitButton"](UIElement const& obj){return obj.name == recyclingUnitButtonName; });
+    if (it != UI.end()) {
+        //Loading texture and applying it to sprite
+        if (!it->texture.loadFromFile(recyclingUnitStr)) { return; }
+        it->texture.setSmooth(true);
+        it->sprite.setTexture(it->texture);
+        it->sprite.setColor(sf::Color(255, 255, 255, 50));
+        it->sprite.setPosition(1550, 300);
     }
 
     //Then load the map
@@ -179,13 +199,12 @@ Inventory GameWorld::getInventory() const {
 }
 
 bool GameWorld::processEvents() {
-    if (isLost) {
+    //If the game ended
+    if (isLost || isWon) {
         return true;
     }
 
     window->pollEvent(event);
-
-
     //Check the type of the event
     switch (event.type)
     {
@@ -259,39 +278,63 @@ void GameWorld::handleClick(int x, int y) {
             auto finalval = std::move(retval);
         }
     }
+    //Ingot furnace creation
+    if (UI[1].isActive && inventory.getQuant(Item::Stone) >= 200 && inventory.getQuant(Item::Coal) >= 100) {
+        //use 200 Stone and 100 Coal
+        inventory.add(Item::Stone, -200);
+        inventory.add(Item::Coal, -100);
+        //Mine shared_ptr for Ingot production
+        auto mine = std::make_shared<Mine>(furnaceStr, Item::Ingot, 1, 3, x / 50, y / 50, 1);
+        //Consumer decorator for iron consumption
+        auto cons = std::make_shared<Consumer>(Item::Iron, 3, mine);
+        //Consumer decorator for coal consumption
+        auto cons2 = std::make_shared<Consumer>(Item::Coal, 3, cons);
+        buildings.push_back(cons2);
+    }
     //Iron mine creation
-    if (UI[1].isActive && inventory.getQuant(Item::Stone) >= 100 && inventory.getQuant(Item::Coal) >= 100) {
+    if (UI[2].isActive && inventory.getQuant(Item::Stone) >= 100 && inventory.getQuant(Item::Coal) >= 100) {
         //use 100 Stone and 100 Coal
         inventory.add(Item::Stone, -100);
         inventory.add(Item::Coal, -100);
         //Mine shared_ptr
-        auto mine = std::make_shared<Mine>(ironMineStr, Item::Iron, 1, x/50, y/50, 1);
+        auto mine = std::make_shared<Mine>(ironMineStr, Item::Iron, 1, 2, x/50, y/50, 1);
         buildings.push_back(mine);
     }
     //Coal mine creation
-    if (UI[2].isActive && inventory.getQuant(Item::Stone) >= 100 && inventory.getQuant(Item::Wood) >= 100) {
+    if (UI[3].isActive && inventory.getQuant(Item::Stone) >= 100 && inventory.getQuant(Item::Wood) >= 100) {
         //use 100 Stone and 100 Wood
         inventory.add(Item::Stone, -100);
         inventory.add(Item::Wood, -100);
         //Mine shared_ptr
-        auto mine = std::make_shared<Mine>(coalMineStr, Item::Coal, 2, x / 50, y / 50, 1);
+        auto mine = std::make_shared<Mine>(coalMineStr, Item::Coal, 2, 3, x / 50, y / 50, 1);
         buildings.push_back(mine);
     }
     //Stone mine creation
-    if (UI[3].isActive && inventory.getQuant(Item::Wood) >= 100) {
+    if (UI[4].isActive && inventory.getQuant(Item::Wood) >= 100) {
         //use 100 Wood
         inventory.add(Item::Wood, -100);
         //Mine shared_ptr
-        auto mine = std::make_shared<Mine>(stoneMineStr, Item::Stone, 2, x / 50, y / 50, 1);
+        auto mine = std::make_shared<Mine>(stoneMineStr, Item::Stone, 2, 2, x / 50, y / 50, 1);
         buildings.push_back(mine);
     }
     //Wood mine creation
-    if (UI[4].isActive && inventory.getQuant(Item::Wood) >= 50) {
+    if (UI[5].isActive && inventory.getQuant(Item::Wood) >= 50) {
         //use 50 Wood
         inventory.add(Item::Wood, -50);
         //Mine shared_ptr
-        auto mine = std::make_shared<Mine>(woodMineStr, Item::Wood, 1, x / 50, y / 50, 1);
+        auto mine = std::make_shared<Mine>(woodMineStr, Item::Wood, 1, 0, x / 50, y / 50, 1);
         buildings.push_back(mine);
+    }
+    //Recycling unit creation
+    if (UI[6].isActive && inventory.getQuant(Item::Ingot) >= 10 && inventory.getQuant(Item::Wood) >= 100) {
+        //use 10 Ingot and 100 Wood
+        inventory.add(Item::Ingot, -10);
+        inventory.add(Item::Wood, -100);
+        //Mine shared_ptr for Ingot production
+        auto cons = std::make_shared<Consumer>(recyclingUnitStr, Item::Pollution, 0.5, x / 50, y / 50, 1);
+        //Consumer decorator for wood consumption
+        auto cons2 = std::make_shared<Consumer>(Item::Wood, 3, cons);
+        buildings.push_back(cons2);
     }
 }
 
@@ -301,6 +344,9 @@ void  GameWorld::update(sf::Time timeElapsed) {
     }
     if (inventory.getQuant(Item::Pollution) > POLLUTION_MAX) {
         isLost = true;
+    }
+    if (inventory.getQuant(Item::Ingot) > INGOT_MIN) {
+        isWon = true;
     }
 }
 
@@ -324,15 +370,46 @@ void GameWorld::render() const {
     }
     //If lost
     if (isLost) {
+        window->clear(sf::Color::Black);
+        sf::Texture loosingScreenTexture;
+        sf::Sprite loosingScreenSprite;
+        //Sprite
+        if (!loosingScreenTexture.loadFromFile(loosingScreenStr, sf::IntRect(0, 0, 1600, 900))) { return; }
+        loosingScreenTexture.setSmooth(true);
+        loosingScreenSprite.setTexture(loosingScreenTexture);
+        //Text
         sf::Text losingText;
         sf::Font font;
         font = inventory.getFont();
         losingText.setFont(font);
-        losingText.setString("You lost ...");
+        losingText.setString("Science sans conscience n'est que ruine de l'âme. (Rabelais)");
         losingText.setFillColor(sf::Color::Red);
-        losingText.setCharacterSize(50);
+        losingText.setCharacterSize(40);
         losingText.setPosition((WIDTH - losingText.getGlobalBounds().width) /2, (HEIGHT - losingText.getGlobalBounds().height) /2);
+        window->draw(loosingScreenSprite);
         window->draw(losingText);
+        window->display();
+        _sleep(3500);
+    }
+    if (isWon) {
+        window->clear(sf::Color::Black);
+        sf::Texture winningScreenTexture;
+        sf::Sprite winningScreenSprite;
+        //Sprite
+        if (!winningScreenTexture.loadFromFile(winningScreenStr, sf::IntRect(0, 0, 1600, 900))) { return; }
+        winningScreenTexture.setSmooth(true);
+        winningScreenSprite.setTexture(winningScreenTexture);
+        //Text
+        sf::Text winningText;
+        sf::Font font;
+        font = inventory.getFont();
+        winningText.setFont(font);
+        winningText.setString("You won !");
+        winningText.setFillColor(sf::Color::White);
+        winningText.setCharacterSize(50);
+        winningText.setPosition((WIDTH - winningText.getGlobalBounds().width) / 2, 200);
+        window->draw(winningScreenSprite);
+        window->draw(winningText);
         window->display();
         _sleep(3500);
     }

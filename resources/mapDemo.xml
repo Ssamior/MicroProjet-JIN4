@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<IronMine x="7" y="12" level="1" rate="2" />
 <Tree x="21" y="1" type="0" />
 <Tree x="5" y="2" type="1" />
 <Tree x="4" y="4" type="0" />
@@ -16,4 +15,4 @@
 <Tree x="25" y="9" type="1" />
 <Tree x="32" y="15" type="0" />
 <Tree x="28" y="7" type="0" />
-<Inventory ingot="0" iron="100" stone="1000" coal="200" wood="1000" pollution="0" />
+<Inventory ingot="50" iron="1000" stone="1000" coal="1000" wood="1000" pollution="0" />

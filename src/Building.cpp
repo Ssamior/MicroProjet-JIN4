@@ -12,6 +12,13 @@ Building::Building(char* const& textureName, int x, int y, int level) :
 	}
 }
 
+bool Building::getWorkingStatus() const {
+	return isWorking;
+}
+void Building::setWorkingStatus(bool isWorkingBool) {
+	isWorking = isWorkingBool;
+}
+
 bool Building::setUpSprite(char* const& textureName, int xSprite, int ySprite) {
 	if (!texture.loadFromFile(textureName, sf::IntRect(0, 0, 50, 50)))
 	{

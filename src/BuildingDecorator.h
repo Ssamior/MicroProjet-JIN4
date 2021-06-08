@@ -1,19 +1,23 @@
 #pragma once
-#include "Building.h"
+#include "InterfaceBuilding.h"
 
 class BuildingDecorator : public InterfaceBuilding {
 private:
-	std::unique_ptr<Building> wrappee;
+	std::shared_ptr<InterfaceBuilding> wrappee;
+	
 public:
+	
+	bool getWorkingStatus() const override;
+	void setWorkingStatus(bool isWorking) override;
 	int getX() const override;
-	void setX(int x);
+	void setX(int x) override;
 	int getY() const override;
-	void setY(int y);
-	int getLevel() const;
-	void setLevel(int l);
-	Building* getWrappee() const;
-	void setWrappee(std::unique_ptr<Building> w);
-	bool setUpSprite(char* const&, int x, int y);
+	void setY(int y) override;
+	int getLevel() const override;
+	void setLevel(int l) override;
+	std::shared_ptr<InterfaceBuilding> getWrappee() const;
+	void setWrappee(std::shared_ptr<InterfaceBuilding> w);
+	bool setUpSprite(char* const&, int x, int y) override;
 	void render(sf::RenderWindow& window) const override;
 	void update(sf::Time time, Inventory* inventory) const override;
 	void updateWrappee(sf::Time time, Inventory* inventory) const;

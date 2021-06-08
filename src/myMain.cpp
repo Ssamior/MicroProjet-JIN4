@@ -5,15 +5,10 @@
 #include "pugixml.hpp"
 #include <SFML/Graphics.hpp>
 
-constexpr char* xmlfile = "../../resources/map.xml";
-
-
-
-
 int myMain()
 {
     bool leaveGame = false;
-    GameWorld gameWorld(xmlfile);
+    GameWorld gameWorld("../../resources/map.xml");
 
        
     sf::Clock clock;

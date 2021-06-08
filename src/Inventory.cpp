@@ -26,7 +26,7 @@ void Inventory::add(int item, double quant) {
 void Inventory::render(sf::RenderWindow& window) const {
 	sf::Text text;
 	std::string str = "";
-	for (int item = Item::Iron; item != Item::End; item++)
+	for (int item = Item::Ingot; item != Item::End; item++)
 	{
 		str.append(items[item] + " : " + std::to_string(getQuant(item)) + "\n");
 	}

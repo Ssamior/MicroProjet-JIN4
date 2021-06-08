@@ -9,23 +9,28 @@
 #include "Consumer.h"
 
 //Window parameters
-constexpr const char* title = "My window";
+constexpr const char* title = "Game";
 constexpr int WIDTH = 1600;
 constexpr int HEIGHT = 900;
 constexpr int GRID_WIDTH = 32;
 constexpr int GRID_HEIGHT = 18;
 
 //Resources
-constexpr int POLLUTION_MAX = 500;
+constexpr int POLLUTION_MAX = 50;
+constexpr int INGOT_MIN = 100;
 constexpr char* backgroundStr = "../../resources/dirtFloor.png";
+constexpr char* loosingScreenStr = "../../resources/loosingScreen.png";
+constexpr char* winningScreenStr = "../../resources/winningScreen.png";
 constexpr char* supprButtonStr = "../../resources/supprButton.png";
 constexpr char* tree0Str = "../../resources/tree0.png";
 constexpr char* tree1Str = "../../resources/tree1.png";
+constexpr char* furnaceStr = "../../resources/furnace.png";
 constexpr char* mineStr = "../../resources/mine.png";
 constexpr char* ironMineStr = "../../resources/ironMine.png";
 constexpr char* coalMineStr = "../../resources/coalMine.png";
-constexpr char* stoneMineStr = "../../resources/mine.png";
-constexpr char* woodMineStr = "../../resources/mine.png";
+constexpr char* stoneMineStr = "../../resources/stoneMine.png";
+constexpr char* woodMineStr = "../../resources/woodMine.png";
+constexpr char* recyclingUnitStr = "../../resources/recyclingUnit.png";
 
 
 
@@ -51,6 +56,7 @@ private:
 	bool showUI = true;
 	bool isGlobalUIActive = false;
 	bool isLost = false;
+	bool isWon = false;
 	int gridWidth = GRID_WIDTH;
 	int gridHeight = GRID_HEIGHT;
 	sf::Event event;
@@ -60,10 +66,12 @@ private:
 	std::vector<std::shared_ptr<InterfaceBuilding>> buildings;
 	std::vector<UIElement> UI = { 
 		UIElement("supprButton",sf::Texture(),sf::Sprite()),
+		UIElement("furnaceButton",sf::Texture(),sf::Sprite()),
 		UIElement("ironMineButton",sf::Texture(),sf::Sprite()),
 		UIElement("coalMineButton",sf::Texture(),sf::Sprite()),
 		UIElement("stoneMineButton",sf::Texture(),sf::Sprite()),
-		UIElement("woodMineButton",sf::Texture(),sf::Sprite())
+		UIElement("woodMineButton",sf::Texture(),sf::Sprite()),
+		UIElement("recyclingUnitButton",sf::Texture(),sf::Sprite())
 	};
 
 	//fileMode allow the possibility to load a GameWorld from file (true) or string (false, used for tests)
