@@ -154,13 +154,6 @@ bool GameWorld::processEvents() {
 void GameWorld::handleBuildingClick(std::shared_ptr<InterfaceBuilding> building) {
     //Supress mode
     if (UI[0].isActive) {
-        /*for (auto& it : buildings) {
-            if (building->getX() == it->getX() && building->getY() == it->getY()) {
-                buildings.erase(std::remove(buildings.begin(), buildings.end(), *it));
-                break;
-            }
-        }*/
-
         auto it = std::find_if(buildings.begin(), buildings.end(), [X = building->getX(), Y = building->getY()](std::shared_ptr<InterfaceBuilding>& obj) { return (obj->getX() == X && obj->getY() == Y); });
 
         if (it != buildings.end()) {
@@ -168,6 +161,11 @@ void GameWorld::handleBuildingClick(std::shared_ptr<InterfaceBuilding> building)
             buildings.erase(it);
             auto finalval = std::move(retval);
         }
+    }
+    if (UI[1].isActive) {
+        /*Mine mine = make_shared<Mine>(parametres);
+        Consumer cons = make_shared<Consumer>(param, mine);
+        buildings.push_back(cons);*/
     }
 }
 
