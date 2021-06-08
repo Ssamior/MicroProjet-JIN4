@@ -33,7 +33,7 @@ constexpr char* woodMineStr = "../../resources/woodMine.png";
 constexpr char* recyclingUnitStr = "../../resources/recyclingUnit.png";
 
 
-
+//Class to set up UI buttons
 class UIElement {
 public:
 	std::string name;

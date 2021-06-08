@@ -5,6 +5,7 @@
 const std::vector<std::string> items = {"Ingot", "Iron", "Stone", "Coal", "Wood", "Pollution", "NotAnItem"};
 enum Item { Ingot = 0, Iron = 1, Stone = 2, Coal = 3, Wood = 4, Pollution = 5, End = 6};
 
+//This class is used as a global inventory for the player
 class Inventory {
 private:
 	std::vector<double> content = std::vector<double>(Item::End);

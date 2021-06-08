@@ -4,12 +4,10 @@
 #include "Building.h"
 #include <SFML/Graphics.hpp>
 
-//Couche qui consomme une ressource (input) à la vitesse (rate) 
-//pour permettre à la couche inférieure de fonctionner
-
+//Use a resource (input) at a given rate
 class Consumer : public BuildingDecorator {
-	Item input; //ce que produit la mine
-	double rate; //vitesse de récolte en item/seconde
+	Item input;
+	double rate;
 public:
 	Consumer(char* const& textureName, Item out, double rate, int x, int y, int level = 1);
 	Consumer(Item out, double rate, std::shared_ptr<InterfaceBuilding> w);

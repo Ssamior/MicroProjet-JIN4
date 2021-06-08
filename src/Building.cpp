@@ -2,6 +2,7 @@
 #include "Inventory.h"
 #include <SFML/Graphics.hpp>
 
+//constructor
 Building::Building(char* const& textureName, int x, int y, int level) :
 	x(x),
 	y(y),
@@ -12,13 +13,15 @@ Building::Building(char* const& textureName, int x, int y, int level) :
 	}
 }
 
+//Checking if any decorator is preventing the building to consume and produce resources
 bool Building::getWorkingStatus() const {
 	return isWorking;
 }
+//Updates can come from any decorator apllied to the building
 void Building::setWorkingStatus(bool isWorkingBool) {
 	isWorking = isWorkingBool;
 }
-
+//Initializing the building's sprite
 bool Building::setUpSprite(char* const& textureName, int xSprite, int ySprite) {
 	if (!texture.loadFromFile(textureName, sf::IntRect(0, 0, 50, 50)))
 	{
@@ -54,5 +57,5 @@ void Building::render(sf::RenderWindow& window) const {
 }
 
 void Building::update(sf::Time time, Inventory* inventory) const {
-	//Update the inventory according to the time spent
+	//empty function
 }

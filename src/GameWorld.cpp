@@ -91,12 +91,13 @@ void GameWorld::load(char* const& string, bool fileMode) {
     //Then load the map
     pugi::xml_document doc;
     pugi::xml_parse_result result;
-    if (fileMode) { //Load from a file
+    //Load from a file ...
+    if (fileMode) { 
         result = doc.load_file(string);
     }
-    else { //Load from a string
-        std::string str = string; //cast to std::string
-        result = doc.load_string(str.c_str());
+    //.. or load from a string
+    else { 
+        result = doc.load_string(string);
     }
     
     if (!result) {
@@ -339,18 +340,22 @@ void GameWorld::handleClick(int x, int y) {
 }
 
 void  GameWorld::update(sf::Time timeElapsed) {
+    //Updating inventories of each building
     for (int i = 0; i < buildings.size(); i++) {
         buildings[i]->update(timeElapsed, &inventory);
     }
+    //Checking if we lost the game due to pollution
     if (inventory.getQuant(Item::Pollution) > POLLUTION_MAX) {
         isLost = true;
     }
+    //checking if we win the game
     if (inventory.getQuant(Item::Ingot) > INGOT_MIN) {
         isWon = true;
     }
 }
 
 void GameWorld::render() const {
+    //Setup
     window->clear();
     window->draw(background);
     
@@ -368,7 +373,7 @@ void GameWorld::render() const {
             window->draw(UI[i].sprite);
         }
     }
-    //If lost
+    //If we lost the game
     if (isLost) {
         window->clear(sf::Color::Black);
         sf::Texture loosingScreenTexture;
@@ -391,6 +396,7 @@ void GameWorld::render() const {
         window->display();
         _sleep(3500);
     }
+    //If we won the game
     if (isWon) {
         window->clear(sf::Color::Black);
         sf::Texture winningScreenTexture;

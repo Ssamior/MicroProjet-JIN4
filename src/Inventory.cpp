@@ -1,8 +1,8 @@
-#pragma once
 #include <iostream>
 #include "Inventory.h"
 
 Inventory::Inventory() {
+	//Loading the font used to display the inventory
 	if (!font.loadFromFile("../../resources/arial.ttf"))
 	{
 		//Error

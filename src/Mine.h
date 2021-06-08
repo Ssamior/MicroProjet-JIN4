@@ -5,13 +5,12 @@
 #include <SFML/Graphics.hpp>
 
 
-//Couche qui recolte une ressource (output) a la vitesse de (rate) par seconde,
-//et qui produit la meme quantite de pollution au passage
+//Produce a resource (output) at a given rate and pollution
 
 class Mine : public BuildingDecorator {
-	Item output; //ce que produit la mine
-	double rate; //vitesse de recolte en item/seconde
-	double pollutionRate; //vitesse de recolte en pollution/seconde
+	Item output;
+	double rate;
+	double pollutionRate;
 public:
 	Mine(char* const& textureName, Item out, double rate, double pollutionRate, int x, int y, int level = 1);
 	Mine(Item out, double rate, std::shared_ptr<InterfaceBuilding> w);

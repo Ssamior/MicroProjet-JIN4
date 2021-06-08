@@ -13,8 +13,10 @@ int myMain()
        
     sf::Clock clock;
     
+    //Main loop
     while (!leaveGame) {
         leaveGame = gameWorld.processEvents();
+        //Passing elapsed time since last loop as parameter
         gameWorld.update(clock.restart());
         gameWorld.render();
        

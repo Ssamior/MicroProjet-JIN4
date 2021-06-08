@@ -1,6 +1,7 @@
 #pragma once
 #include "InterfaceBuilding.h"
 
+//The decorator can be applied to any Building object, adding new properties to the latter
 class BuildingDecorator : public InterfaceBuilding {
 private:
 	std::shared_ptr<InterfaceBuilding> wrappee;

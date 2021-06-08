@@ -2,6 +2,7 @@
 #include "Inventory.h"
 #include <SFML/Graphics.hpp>
 
+//Interface for setting up the Decorator pattern
 class InterfaceBuilding {
 public:
 	virtual ~InterfaceBuilding() = default;
